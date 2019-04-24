@@ -1,0 +1,28 @@
+
+.flashoff{
+	background-color: #fff;
+	transition: .5s;
+	position: relative;
+	opacity: 0;
+}
+
+.flashon{
+	opacity: 0;
+	background-color: #fff;
+	transition: .5s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	animation: shoot 1s
+}
+
+@keyframes shoot{
+	0%{opacity: 0;}
+	50%{opacity: 1;}
+	60%{opacity: 0;}
+	75%{opacity: 1;}
+	100%{opacity: 0;}
+}

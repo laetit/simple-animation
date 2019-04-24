@@ -1,0 +1,17 @@
+
+.polaroid{
+	border: solid #fff 16px;
+	border-bottom: solid #fff 42px;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 3px;
+	animation: scaleIn 1s
+}
+
+
+@keyframes scaleIn{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}
